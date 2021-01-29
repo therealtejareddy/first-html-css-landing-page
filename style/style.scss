@@ -122,8 +122,14 @@
 .color-section {
     background-color: hsl(238, 22%, 44%);
     color: white;
+    form {
+        width: 100%;
+    }
+    .form-control {
+        width: 100%;
+    }
     input[type='email'] {
-        width: 30em;
+        width: 100%;
     }
     .btn {
         margin-top: 1em;

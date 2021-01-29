@@ -238,8 +238,16 @@ a img {
   color: white;
 }
 
+.color-section form {
+  width: 100%;
+}
+
+.color-section .form-control {
+  width: 100%;
+}
+
 .color-section input[type='email'] {
-  width: 30em;
+  width: 100%;
 }
 
 .color-section .btn {
