@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    line-height: 1.6em;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+h1 {
+    font-size: 2.25em;
+    font-weight: bold;
+    line-height: 1.7em;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+
+h4,
+h5,
+h6 {
+    margin: 5px 0 5px;
+    font-weight: bold;
+}
+
+a img {
+    border: none;
+    outline: none;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #999;
+}
+
+/* remove dotted lines on some links in FF browser */
+
+a,
+a:active,
+a:visited,
+a img {
+    outline: none;
+}

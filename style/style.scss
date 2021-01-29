@@ -1,0 +1,263 @@
+@import './global';
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.header {
+    img {
+        width: 6em;
+    }
+    padding: 2em 1em;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    ul {
+        list-style-type: none;
+    }
+    li {
+        display: inline-block;
+        margin-left: 4em;
+    }
+}
+
+.sections {
+    padding: 4em 1em;
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+    .left-col {
+        text-align: left;
+        width: 80%;
+    }
+    #left-col {
+        display: flex;
+        align-items: center;
+    }
+    .right-col {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 100%;
+        }
+    }
+    .form-control, .btn {
+        display: inline-block;
+        outline: none;
+        margin-top: 1em;
+    }
+    input[type='email'] {
+        padding: 1em 1em;
+        width: 20em;
+        font-size: 1em;
+    }
+    p {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    a {
+        color: hsl(170, 45%, 43%);
+        padding: .5em;
+        border-bottom: 3px solid hsl(170, 45%, 43%);
+        // display: flex;
+        // align-items: center;
+    }
+}
+.btn {
+    border: none;
+    border-radius: 4px;
+    background-color: hsl(224, 93%, 58%);
+    padding: 1.55em 3em;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: hsl(224, 89%, 65%);
+}
+.card {
+    align-self: center;
+    margin-top: 3em;
+    width: 400px;
+    height: 310px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(80, 81, 105, 0.514);
+
+    .profile {
+        display: flex;
+        align-items: center;
+        p {
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        span {
+            margin-top: 1px;
+            font-size: 12px;
+        }
+        img {
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;
+        }
+        div {
+            margin-left: 1em;
+        }
+    }
+}
+#cardcenter {
+    display: flex;
+    flex-direction: column;
+}
+
+.color-section {
+    background-color: hsl(238, 22%, 44%);
+    color: white;
+    input[type='email'] {
+        width: 30em;
+    }
+    .btn {
+        margin-top: 1em;
+        cursor: pointer;
+        display: block;
+    }
+
+}
+.footer {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: white;
+    background-color:hsl(243, 87%, 12%);
+    &__foot {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+        
+        div {
+            padding-top: 1em;
+            a {
+                display: block;
+                margin-bottom: 1em;
+                color: white;
+            }
+            i {
+                padding: 1em;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+.sections:nth-child(3) {
+    background-image: url('../images/bg-curve-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+
+@media screen and (min-width: 1400px) {
+    .container {
+        width: 1300px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 900px) {
+    .header {
+        img {
+            width: 4em;
+        }
+    }
+    .sections {
+        .container {
+            .left-col {
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        .container {
+            ul {
+                li {
+                    margin-left: 1.5em;
+                }
+            }
+        }
+    }
+    .sections:nth-child(3) {
+        background-image: url('../images/bg-curve-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+
+    .sections:not(.color-section) {
+        .container {
+            display: flex;
+            flex-direction: column-reverse;
+            .form-control, .btn, input[type='email']{
+                width: 100%;
+            }
+        }
+    }
+    .color-section {
+        .container {
+            display: flex;
+            flex-direction: column;
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+    .footer {
+            &__social {
+                display: flex;
+                align-items: center;
+                text-align: center;
+
+                i {
+                    padding: 1em;
+
+                }
+            }
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .sections {
+        .container {
+            .card {
+                width: 95%;
+            }
+        }
+    }
+    .color-section {
+        form {
+            width: 90%
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .color-section {
+        form {
+            width: 90%
+        }
+    }
+}
+
+

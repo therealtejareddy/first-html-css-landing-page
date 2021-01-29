@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Fylo landing page with two column layout</title>
+  <link rel="stylesheet" href="./style/style.css">
+
+</head>
+<body>
+  <header class="header" data-aos="fade-down" data-aos-once="true" data-aos-delay="100" data-aos-duration="1000">
+    <div class="container">
+          <img src="./images/logo.svg" alt="">
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Features</a></li>
+        <li><a href="">Team</a></li>
+        <li><a href="">Sign In</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+  <section class="sections">
+    <div class="container">
+      <div class="left-col" id="left-col" data-aos="slide-right" data-aos-once="true" data-aos-delay="100" data-aos-duration="1000">
+        <div>
+          <h1>All your files in one secure location, accessible anywhere.</h1>
+        <p>
+        Fylo stores your most important files in one secure location. 
+        Access them wherever you need, share and collaborate with friends, 
+        family, and co-workers.
+        </p>
+        <form class="form" action="">
+          <div class="form-control">
+            <input type="email" name="email" id="email" placeholder="Enter your Email..." required autocomplete="off">
+          </div>
+          <input class="btn" type="button" value="Get Started">
+        </form>
+        </div>
+      </div>
+    <div class="right-col" data-aos="slide-left" data-aos-once="true" data-aos-delay="100" data-aos-duration="1000">
+      <img src="./images/illustration-1.svg" alt="">
+    </div>
+    </div>
+  </section>
+  <section class="sections">
+    <div class="container">
+          <div class="left-col" id="cardcenter" data-aos="fade-up" data-aos-once="true" data-aos-delay="100" data-aos-duration="1000">
+            <div>
+              <h2>Stay productive, wherever you are</h2>
+      <p>  Never let location be an issue when accessing your files. Fylo has you 
+        covered for all of your file storage needs.
+      </p>
+      <p>Securely share files and folders with friends, family and colleagues for 
+        live collaboration. No email attachments required!
+      </p>
+      <a href="#">See how Fylo works <img src="./images/icon-arrow.svg" alt=""></a>
+            </div>
+      <div class="card" data-aos="flip-left" data-aos-once="true" data-aos-delay="100" data-aos-duration="1000">
+        <div class="quote">
+          <img src="./images/icon-quotes.svg" alt="">
+        </div>
+        <div>
+          <p>
+            Fylo has improved our team productivity by an order of magnitude. Since 
+            making the switch our team has become a well-oiled collaboration machine.
+          </p>
+        </div>
+        <div class="profile">
+          <img src="./images/avatar-testimonial.jpg" alt="">
+          <div>
+            <p>Mannepalli Uday Kumar</p>
+          <span>Founder & CEO, Huddle</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-col" data-aos="fade-left" data-aos-once="true" data-aos-delay="100" data-aos-duration="1000">
+      <img src="./images/illustration-2.svg" alt="">
+    </div>
+    </div>
+  </section>
+  <section class="sections color-section" data-aos="slide-up" data-aos-once="true" data-aos-delay="100" data-aos-duration="1000">
+    <div class="container">
+          <div class="left-col">
+      <h3>Get early access today</h3>
+      <p>
+        It only takes a minute to sign up and our free starter tier is extremely generous. 
+        If you have any questions, our support team would be happy to help you.
+      </p>
+    </div>
+    <div class="right-col">
+      <form action="">
+        <div class="form-control">
+          <input type="email" name="email" id="email" placeholder="Enter Email..." required>
+        </div>
+        <input class="btn" type="button" value="Get Started For Free">
+      </form>
+    </div>
+    </div>
+  </section>
+
+  <footer class="footer" data-aos="fade-down" data-aos-once="true" data-aos-delay="100" data-aos-duration="1000">
+    <div class="container">
+      <div class="brand">
+        <img src="./images/logo-1.svg" alt="">
+      </div>
+      <div class="footer__foot">
+        <div>
+          <p>Phone: +1-543-123-4567</p>
+          <p>example@fylo.com</p>
+        </div>
+        <div>
+          <a href="#">Get Started</a>
+          <a href="#">About Us</a>
+          <a href="#">Jobs</a>
+          <a href="#">Press</a>
+          <a href="#">Blog</a>
+        </div>
+        <div>
+          <a href="#">Contact Us</a>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+        </div>
+        <div class="footer__social">
+          <div>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
